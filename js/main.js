@@ -3,10 +3,6 @@
     var sector_chart = dc.pieChart("#sector");
     var map_chart = dc.geoChoroplethChart("#map");
 
-    // var geodata = "data/final_topo.json";
-    
-    // var geojson = topojson.feature(geodata, geodata.objects.p_code).features;
-
     d3.csv("data/data_website.csv", function(csv_data){
 
         var cf = crossfilter(csv_data);
@@ -22,22 +18,6 @@
         sector_chart.width(240).height(240)
             .dimension(cf.sector)
             .group(sector)
-            // .append("text")
-            //     .attr("transform", function(d) { 
-            //       return "translate" + ( (radius - 12) * Math.sin( ((d.endAngle - d.startAngle) / 2) + d.startAngle ) ) + "," + ( -1 * (radius - 12) * Math.cos( ((d.endAngle - d.startAngle) / 2) + d.startAngle ) ) + ")"; })
-            //     .attr("dy", ".35em")
-            //     .style("text-anchor", function(d) {
-            //       var rads = ((d.endAngle - d.startAngle) / 2) + d.startAngle;
-            //       if ( (rads > 7 * Math.PI / 4 && rads < Math.PI / 4) || (rads > 3 * Math.PI / 4 && rads < 5 * Math.PI / 4) ) {
-            //         return "middle";
-            //       } else if (rads >= Math.PI / 4 && rads <= 3 * Math.PI / 4) {
-            //         return "start";
-            //       } else if (rads >= 5 * Math.PI / 4 && rads <= 7 * Math.PI / 4) {
-            //         return "end";
-            //       } else {
-            //         return "middle";
-            //       }
-            //     })
                 // .label(function(d) { 
                 //   return d.sector.SctrCluster; })
             .innerRadius(20)
@@ -56,8 +36,7 @@
         dc.dataCount("#count-info")
 	.dimension(cf)
 	.group(all);
-                        
-        // d3.json("data/Phil_provinces.geojson", function (provincesJSON) {
+
         d3.json("data/geo_topo.json", function (communesJSON) {
 
 

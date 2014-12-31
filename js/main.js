@@ -1,70 +1,146 @@
-(function(){
+var width = $("#map").width()
+    height = $("#map").height();
 
-    var sector_chart = dc.pieChart("#sector");
-    var map_chart = dc.geoChoroplethChart("#map");
+var projection = d3.geo.mercator()
+    .scale(5000)
+    .translate([width / 2, height / 2]);
 
-    d3.csv("data/data_website.csv", function(csv_data){
+// haitiBoundingBox is included in the fitProjection.js file
+fitProjection(projection, haitiBoundingBox, [[0,0],[width, height]]);
 
-        var cf = crossfilter(csv_data);
-        
-        cf.sector = cf.dimension(function(d) { return d.SctrCluster; });
+var path = d3.geo.path()
+    .projection(projection);
 
-        cf.pcode = cf.dimension(function(d) { return d.CommuneCODE; });
-        
-        var sector = cf.sector.group();
-        var pcode = cf.pcode.group();
-        var all = cf.groupAll();
+var svg = d3.select("#map").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("id", "map");
 
-        sector_chart.width(240).height(240)
-            .dimension(cf.sector)
-            .group(sector)
-                // .label(function(d) { 
-                //   return d.sector.SctrCluster; })
-            .innerRadius(20)
-            .colors(['#fd8d3c',
-                    '#fc4e2a',
-                    '#e31a1c',
-                    '#bd0026',
-                    '#800026',
-                    '#807dba',
-                    '#6a51a3',
-                    '#54278f',
-                    '#3f007d'])
-            .colorDomain([0,8])
-            .colorAccessor(function(d, i){return i%9;});
-            
-        dc.dataCount("#count-info")
-	.dimension(cf)
-	.group(all);
+var otherGeoGroup = svg.append('g').attr("id", "geo-other");
+var communeGroup = svg.append('g').attr("id", "geo-commune");
 
-        d3.json("data/geo_topo.json", function (communesJSON) {
+var prjData = [];
+
+function getGeo(){
+  d3.json("data/hispaniola.json", function(data) {
+    communeData  = topojson.feature(data, data.objects.hispaniola).features;
+    // add Haiti communes to map
+    communeGroup.selectAll("path")
+      .data((communeData).filter(function(d){ return d.properties.p_code !== "other" }))
+      .enter().append("path")
+      .attr("d",path)
+      .attr("class", "poly-commune")
+      .on("click",clickedCommune)
+      .on("mouseover", function(d){ 
+        var tooltipText = "<strong>" + d.properties.Commune + "</strong>";
+        $('#tooltip').append(tooltipText);                
+      })
+      .on("mouseout", function(){ 
+         $('#tooltip').empty();        
+      });
+    // add non-Haiti landmass to map
+    otherGeoGroup.selectAll("path")
+      .data((communeData).filter(function(d){ return d.properties.p_code == "other" }))
+      .enter().append("path")
+      .attr("d",path)
+      .attr("class", "poly-other");
+
+    getPrjData();
+  }); 
+}
+
+function getPrjData(){
+  d3.csv("data/projects.csv", function(data){
+    prjData = data;
+    colorProjectAreas();
+  });
+}
+
+// style the commmunes with projects differently from those with none
+function colorProjectAreas(){
+  var allProjectCommunes = [];
+  $(prjData).each(function(index, project){
+    if($.inArray(project.CommuneCODE, allProjectCommunes) == -1){
+      allProjectCommunes.push(project.CommuneCODE);
+    }
+  });
+  $(allProjectCommunes).each(function(index, commune){
+    communeGroup.selectAll("path").filter(function(d){ return d.properties.p_code == commune } )
+      .classed("poly-commune-hasprojects", true);
+  });
+
+  // load with shelter sector active
+  $("#Shelter").click();
+  
+}
+
+function clickedCommune(){
+  // toggle the clicked commune
+  if(d3.select(this).classed("active-geo")){
+    d3.select(this).classed("active-geo",false);
+  } else {
+    d3.select(this).classed("active-geo",true);
+  }
+
+  var activeCommunes = [];
+  var communePrjSectors = [];
+
+  // select all highlighted communes and built a list of their p-codes
+  communeGroup.selectAll(".active-geo").each(function(d){
+    activeCommunes.push(d.properties.p_code);
+  });
+
+  // loop through projects 
+  // and if the project area p-code matches a highlighted commune
+  // and the prj sector is not yet in our list of active sectors
+  // and the prj sector is not an empty string
+  // then push the prj sector to our list
+  $(prjData).each(function(index, project){
+    if($.inArray(project.CommuneCODE, activeCommunes) !== -1 && $.inArray(project.SctrCluster.replace(/\s+/g, ''), communePrjSectors) == -1 && project.SctrCluster !== ""){
+        communePrjSectors.push(project.SctrCluster.replace(/\s+/g, ''));
+    }
+  });
+  // select the buttons that correspond to our active sectors and
+  // set them active
+  d3.selectAll(".btn-custom-sector").classed("active", false);
+  $(communePrjSectors).each(function(index, sector){
+    var selector = "#" + sector;
+    d3.select(selector).classed("active", true);
+  }); 
+}
+
+function clickedSector(button) {
+  // toggle the sector button
+  if(d3.select(button).classed("active")){
+    d3.select(button).classed("active",false);
+  } else {
+    d3.select(button).classed("active",true);
+  }
+
+  var activePrjSectors = [];
+
+  // build a list of active sectors
+  d3.selectAll(".btn-custom-sector").filter(".active").each(function(d){
+    activePrjSectors.push($(this).attr("id"));
+  });
+
+  // remove highlighting from all mapped communes
+  communeGroup.selectAll("path").classed("active-geo", false);
+  // loop through the prj data...
+  $(prjData).each(function(index, project){
+    // is this project sector an active sector?
+    if($.inArray(project.SctrCluster.replace(/\s+/g, ''), activePrjSectors) !== -1){
+      // if yes, color the corresponding commune
+      communeGroup.selectAll("path").filter(function(d){ return d.properties.p_code == project.CommuneCODE } )
+        .classed("active-geo", true);
+    }
+  });
+}
+
+function resetMap(){
+  communeGroup.selectAll("path").classed("active-geo", false);
+  d3.selectAll(".btn-custom-sector").classed("active", false);
+}
 
 
-            map_chart.width(660).height(600)
-                .dimension(cf.pcode)
-                .group(pcode)
-                .colors(['#E6E6E6', '#ED1B2E'])
-                .colorDomain([0, 1])
-                .colorAccessor(function (d) {
-                    if(d>0){
-                        return 1;
-                    } else {
-                        return 0;
-                    }
-                })
-                .projection(d3.geo.mercator().center([-72.5,19]).scale(12000))
-
-                .overlayGeoJson(communesJSON.features, "Commune", function (d) {
-                    return d.properties.p_code;
-                })
-                .title(function (d) {
-                    return "Commune: " + pcode2comm[d.key];
-                });
-
-                $('#loading').hide();
-                $('#dashboard').show();
-                $('#map').show();
-                dc.renderAll();     
-            });
-    });
-})();
+getGeo();

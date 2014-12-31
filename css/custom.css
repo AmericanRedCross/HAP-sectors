@@ -1,0 +1,132 @@
+html, body {
+	height:429px;
+	width:763px;
+	background: #222;
+}
+*:focus {
+    outline: 0 !important;
+}
+#button-box {
+	width:230px;
+	height:429px;
+	display: inline-block;
+	background: #fff;
+	position: relative;
+	padding-left:8px;
+	padding-top: 12px;
+}
+#map{
+	position:fixed;
+	width: 533px;
+    height: 429px;
+    display: inline-block;
+    background: #fff;
+}
+
+.btn-custom{
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.btn-custom:hover{
+	background-color: #e6e6e6;
+}
+.btn-custom-refresh {
+	padding: 5px;
+	margin: 4px;
+	position: absolute;
+	bottom: 12px;
+	left: 8px;
+	color: #6d6e70;
+}
+.btn-custom-sector {
+	padding: 5px;
+	margin: 4px;
+}
+.btn-text {
+	vertical-align: middle;
+	font-weight: bold;
+	color: #6d6e70;
+	margin-right: 5px;
+}
+.btn-custom.active .btn-text {
+	color: #ed1b2e;
+}
+.btn-sector-icon {
+	height: 30px;
+	width: 30px;
+	margin-right: 6px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-size: 350px 100px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.btn-sector-icon.cholera{
+	background-position: 0px -50px;
+}
+.btn-sector-icon.drr{
+	background-position: -50px -50px;
+}
+.btn-sector-icon.emergencyresponse{
+	background-position: -100px -50px;
+}
+.btn-sector-icon.health{
+	background-position: -150px -50px;
+}
+.btn-sector-icon.livelihoods{
+	background-position: -200px -50px;
+}
+.btn-sector-icon.shelter{
+	background-position: -250px -50px;
+}
+.btn-sector-icon.watsan{
+	background-position: -300px -50px;
+}
+
+.btn-custom-sector.active .btn-sector-icon.cholera{
+	background-position: 0px 0px;
+}
+.btn-custom-sector.active .btn-sector-icon.drr{
+	background-position: -50px 0px;
+}
+.btn-custom-sector.active .btn-sector-icon.emergencyresponse{
+	background-position: -100px 0px;
+}
+.btn-custom-sector.active .btn-sector-icon.health{
+	background-position: -150px 0px;
+}
+.btn-custom-sector.active .btn-sector-icon.livelihoods{
+	background-position: -200px 0px;
+}
+.btn-custom-sector.active .btn-sector-icon.shelter{
+	background-position: -250px 0px;
+}
+.btn-custom-sector.active .btn-sector-icon.watsan{
+	background-position: -300px 0px;
+}
+
+.poly-commune {
+	stroke: #6d6e70;
+	fill: #d7d7d8;
+    stroke-width: 0.75px;
+}
+.poly-commune-hasprojects {
+	fill: #f8a9b0;
+	cursor: pointer;
+}
+.poly-commune-hasprojects.active-geo {
+	fill: #ed1b2e;
+}
+.poly-other{
+    stroke: #9f9fa3;
+    fill: #e3e3e3;   
+}
+#tooltip {                      
+    position:absolute;
+    z-index:999;
+    top: 8px;
+    right: 12px;
+    text-align: right;
+    font-size:16px;
+    color: #6d6e70;            
+}    

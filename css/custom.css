@@ -61,6 +61,13 @@ html, body {
 	display: inline-block;
 	vertical-align: middle;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+only screen and (min--moz-device-pixel-ratio: 1.5), 
+only screen and (min-resolution: 240dpi) {
+.btn-sector-icon {
+    background-image: url(../img/sprite@2x.png);
+  }
+}
 .btn-sector-icon.cholera{
 	background-position: 0px -50px;
 }

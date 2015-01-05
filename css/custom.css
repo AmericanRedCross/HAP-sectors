@@ -10,7 +10,7 @@ html, body {
 	width:230px;
 	height:429px;
 	display: inline-block;
-	background: #fff;
+	background: #e6f4ff;
 	position: relative;
 	padding-left:8px;
 	padding-top: 12px;
@@ -20,7 +20,7 @@ html, body {
 	width: 533px;
     height: 429px;
     display: inline-block;
-    background: #fff;
+    background: #e6f4ff;
 }
 
 .btn-custom{

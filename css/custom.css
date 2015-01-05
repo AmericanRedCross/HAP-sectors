@@ -7,17 +7,19 @@ html, body {
     outline: 0 !important;
 }
 #button-box {
-	width:230px;
+	width:231px;
 	height:429px;
 	display: inline-block;
 	background: #e6f4ff;
 	position: relative;
 	padding-left:8px;
 	padding-top: 12px;
+	z-index:2;
 }
 #map{
 	position:fixed;
-	width: 533px;
+	margin-left: -2px;
+	width: 532px;
     height: 429px;
     display: inline-block;
     background: #e6f4ff;

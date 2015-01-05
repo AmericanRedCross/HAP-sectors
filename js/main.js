@@ -19,11 +19,10 @@ var svg = d3.select("#map").append("svg")
 var otherGeoGroup = svg.append('g').attr("id", "geo-other");
 var communeGroup = svg.append('g').attr("id", "geo-commune");
 
-var prjData = [];
 
 function getGeo(){
-  d3.json("data/hispaniola.json", function(data) {
-    communeData  = topojson.feature(data, data.objects.hispaniola).features;
+  
+    communeData  = topojson.feature(hispaniolaData, hispaniolaData.objects.hispaniola).features;
     // add Haiti communes to map
     communeGroup.selectAll("path")
       .data((communeData).filter(function(d){ return d.properties.p_code !== "other" }))
@@ -45,16 +44,10 @@ function getGeo(){
       .attr("d",path)
       .attr("class", "poly-other");
 
-    getPrjData();
-  }); 
+    colorProjectAreas();
+   
 }
 
-function getPrjData(){
-  d3.csv("data/projects.csv", function(data){
-    prjData = data;
-    colorProjectAreas();
-  });
-}
 
 // style the commmunes with projects differently from those with none
 function colorProjectAreas(){

@@ -1,5 +1,5 @@
-var width = $("#map").width()
-    height = $("#map").height();
+var width = 533;
+    height = 429;
 
 var projection = d3.geo.mercator()
     .scale(5000)

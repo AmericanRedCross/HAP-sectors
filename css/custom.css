@@ -133,7 +133,7 @@ only screen and (min-resolution: 240dpi) {
     position:fixed;
     z-index:999;
     top: 8px;
-    right: 12px;
+    right: 24px;
     text-align: right;
     font-size:16px;
     color: #6d6e70;            

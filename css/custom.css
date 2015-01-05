@@ -21,6 +21,7 @@ html, body {
     height: 429px;
     display: inline-block;
     background: #e6f4ff;
+    z-index: 1;
 }
 
 .btn-custom{
@@ -129,7 +130,7 @@ only screen and (min-resolution: 240dpi) {
     fill: #e3e3e3;   
 }
 #tooltip {                      
-    position:absolute;
+    position:fixed;
     z-index:999;
     top: 8px;
     right: 12px;

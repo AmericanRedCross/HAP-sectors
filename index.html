@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    
+
       <div id="button-box">
 
         <button id="Cholera" class="btn btn-custom btn-custom-sector" onClick="clickedSector(this);">
@@ -33,22 +33,36 @@
         <button id="Shelter" class="btn btn-custom btn-custom-sector" onClick="clickedSector(this);">
           <span class="btn-sector-icon shelter"></span>
           <span class="btn-text">Shelter</span></button><br>
-        <button id="WatSan" class="btn btn-custom btn-custom-sector" onClick="clickedSector(this);">
+        <button id="WaterandSanitation" class="btn btn-custom btn-custom-sector" onClick="clickedSector(this);">
           <span class="btn-sector-icon watsan"></span>
           <span class="btn-text">Water and Sanitation</span></button>
 
-        <button class="btn btn-xs btn-custom btn-custom-refresh" onClick="resetMap();">
+        <!-- <button class="btn btn-xs btn-custom btn-custom-refresh" onClick="resetMap();">
           &nbsp;<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> &nbsp; Reset map
-        </button>
-  
-      </div>
+        </button> -->
 
+        <button class="btn btn-xs btn-custom btn-custom-refresh disabled">
+          Click a sector button or marker on the map to learn more.
+        </button>
+
+      </div>
+      <div id="info">
+          <div id="dismiss" class="pull-right"><span class="glyphicon glyphicon-remove"></span></div>
+          <div class="text">
+            <h1 id="info-title">Lorem ipsum</h1>
+            <p id="info-blurb">In hac habitasse platea dictumst. Nullam at odio sit amet nisl cursus mollis. Suspendisse tincidunt, velit non iaculis gravida, mi mauris pharetra enim, a ultrices magna felis at diam. Nullam nibh nisi, faucibus sed arcu quis, iaculis sodales urna. Quisque varius nulla at ligula fermentum fermentum. Quisque condimentum vitae diam ut volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla urna nulla, convallis quis commodo ut, viverra nec mauris. Fusce id enim sit amet tortor molestie laoreet. Integer sit amet nulla sem. Maecenas semper erat sem, sed volutpat nulla ornare at. Sed ut velit id nisl lobortis pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis iaculis nibh a volutpat.</p>
+            <p><a id="info-link" href="" target="_blank">Link to fact sheet.</a></p>
+          </div>
+      </div>
       <div id="map">
         <div id="tooltip"></div>
       </div>
 
     <script type="text/javascript" src="js/hispaniola.js"></script>
     <script type="text/javascript" src="js/projectData.js"></script>
+    <script type="text/javascript" src="js/sectorinfo.js"></script>
+    <script type="text/javascript" src="js/stories.js"></script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -56,6 +70,6 @@
     <script type="text/javascript" src="js/topojson.v1.min.js"></script>
     <script type="text/javascript" src="js/fitProjection.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    
+
   </body>
 </html>

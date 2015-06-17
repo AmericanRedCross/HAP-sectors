@@ -2,6 +2,8 @@ html, body {
 	height:429px;
 	width:763px;
 	background: #fff;
+	margin:0;
+	padding:0;
 }
 *:focus {
     outline: 0 !important;
@@ -20,11 +22,38 @@ html, body {
 	position:fixed;
 	margin-left: -2px;
 	width: 532px;
-    height: 429px;
-    display: inline-block;
-    background: #e6f4ff;
-    z-index: 1;
+  height: 429px;
+  display: inline-block;
+  background: #e6f4ff;
+  z-index: 1;
 }
+#info{
+	position: fixed;
+	width: 763px;
+	height: 429px;
+	left:0;
+	top:0;
+	z-index: 3;
+	display: inline-block;
+	background-image: url("../img/background.png");
+	background-repeat: repeat;
+	padding: 24px;
+	display: none;
+
+}
+#info .text {
+	color: #ffffff;
+}
+#dismiss{
+	color: #f5f5f5;
+	opacity: 0.9;
+	cursor: pointer;
+}
+#dismiss span{
+	font-size: 26px;
+}
+
+
 
 .btn-custom{
 	background-color: #fff;
@@ -64,8 +93,8 @@ html, body {
 	display: inline-block;
 	vertical-align: middle;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
-only screen and (min--moz-device-pixel-ratio: 1.5), 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 240dpi) {
 .btn-sector-icon {
     background-image: url(../img/sprite@2x.png);
@@ -122,21 +151,27 @@ only screen and (min-resolution: 240dpi) {
 }
 .poly-commune-hasprojects {
 	fill: #f8a9b0;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 .poly-commune-hasprojects.active-geo {
 	fill: #ed1b2e;
 }
 .poly-other{
     stroke: #9f9fa3;
-    fill: #e3e3e3;   
+    fill: #e3e3e3;
 }
-#tooltip {                      
+.story-marker{
+	cursor: pointer;
+	fill: #ecb731;
+	stroke: #6d6e70;
+
+}
+#tooltip {
     position:fixed;
     z-index:999;
     top: 8px;
     right: 24px;
     text-align: right;
     font-size:16px;
-    color: #6d6e70;            
-}    
+    color: #6d6e70;
+}

@@ -18,10 +18,11 @@ var svg = d3.select("#map").append("svg")
 
 var otherGeoGroup = svg.append('g').attr("id", "geo-other");
 var communeGroup = svg.append('g').attr("id", "geo-commune");
+var storiesGroup = svg.append('g').attr("id", "geo-stories");
 
 
 function getGeo(){
-  
+
     communeData  = topojson.feature(hispaniolaData, hispaniolaData.objects.hispaniola).features;
     // add Haiti communes to map
     communeGroup.selectAll("path")
@@ -30,12 +31,12 @@ function getGeo(){
       .attr("d",path)
       .attr("class", "poly-commune")
       .on("click",clickedCommune)
-      .on("mouseover", function(d){ 
-        var tooltipText = "<strong>" + d.properties.Commune + "</strong>";
-        $('#tooltip').append(tooltipText);                
+      .on("mouseover", function(d){
+        var tooltipText = "<strong>" + d.properties.Commune + " Commune</strong>";
+        $('#tooltip').append(tooltipText);
       })
-      .on("mouseout", function(){ 
-         $('#tooltip').empty();        
+      .on("mouseout", function(){
+         $('#tooltip').empty();
       });
     // add non-Haiti landmass to map
     otherGeoGroup.selectAll("path")
@@ -44,8 +45,24 @@ function getGeo(){
       .attr("d",path)
       .attr("class", "poly-other");
 
+    // add points for stories to map
+    storiesGroup.selectAll("circle")
+      .data(stories)
+      .enter().append("circle")
+      .attr("class", "story-marker")
+      .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";})
+		  .attr("r", "5px")
+      .on("click",function(d) { clickedStory(d); })
+      .on("mouseover", function(d){
+        var tooltipText = "<i>Story: " + d.story_name + "</i>";
+        $('#tooltip').append(tooltipText);
+      })
+      .on("mouseout", function(){
+         $('#tooltip').empty();
+      });
+
     colorProjectAreas();
-   
+
 }
 
 
@@ -63,71 +80,88 @@ function colorProjectAreas(){
   });
 
   // load with shelter sector active
-  $("#Shelter").click();
-  
+  // $("#Shelter").click();
+
+}
+
+function clickedStory(d){
+  d3.select("#info-title").text(d.story_name);
+  d3.select("#info-blurb").text(d.story);
+  $("#info-link").hide(); // info-link is for clicked sectors
+  $("#info").fadeIn();
 }
 
 function clickedCommune(){
-  // toggle the clicked commune
-  if(d3.select(this).classed("active-geo")){
-    d3.select(this).classed("active-geo",false);
-  } else {
-    d3.select(this).classed("active-geo",true);
-  }
-
-  var activeCommunes = [];
-  var communePrjSectors = [];
-
-  // select all highlighted communes and built a list of their p-codes
-  communeGroup.selectAll(".active-geo").each(function(d){
-    activeCommunes.push(d.properties.p_code);
-  });
-
-  // loop through projects 
-  // and if the project area p-code matches a highlighted commune
-  // and the prj sector is not yet in our list of active sectors
-  // and the prj sector is not an empty string
-  // then push the prj sector to our list
-  $(prjData).each(function(index, project){
-    if($.inArray(project.CommuneCODE, activeCommunes) !== -1 && $.inArray(project.SctrCluster.replace(/\s+/g, ''), communePrjSectors) == -1 && project.SctrCluster !== ""){
-        communePrjSectors.push(project.SctrCluster.replace(/\s+/g, ''));
-    }
-  });
-  // select the buttons that correspond to our active sectors and
-  // set them active
-  d3.selectAll(".btn-custom-sector").classed("active", false);
-  $(communePrjSectors).each(function(index, sector){
-    var selector = "#" + sector;
-    d3.select(selector).classed("active", true);
-  }); 
+  // // toggle the clicked commune
+  // if(d3.select(this).classed("active-geo")){
+  //   d3.select(this).classed("active-geo",false);
+  // } else {
+  //   d3.select(this).classed("active-geo",true);
+  // }
+  //
+  // var activeCommunes = [];
+  // var communePrjSectors = [];
+  //
+  // // select all highlighted communes and built a list of their p-codes
+  // communeGroup.selectAll(".active-geo").each(function(d){
+  //   activeCommunes.push(d.properties.p_code);
+  // });
+  //
+  // // loop through projects
+  // // and if the project area p-code matches a highlighted commune
+  // // and the prj sector is not yet in our list of active sectors
+  // // and the prj sector is not an empty string
+  // // then push the prj sector to our list
+  // $(prjData).each(function(index, project){
+  //   if($.inArray(project.CommuneCODE, activeCommunes) !== -1 && $.inArray(project.SctrCluster.replace(/\s+/g, ''), communePrjSectors) == -1 && project.SctrCluster !== ""){
+  //       communePrjSectors.push(project.SctrCluster.replace(/\s+/g, ''));
+  //   }
+  // });
+  // // select the buttons that correspond to our active sectors and
+  // // set them active
+  // d3.selectAll(".btn-custom-sector").classed("active", false);
+  // $(communePrjSectors).each(function(index, sector){
+  //   var selector = "#" + sector;
+  //   d3.select(selector).classed("active", true);
+  // });
 }
 
 function clickedSector(button) {
-  // toggle the sector button
-  if(d3.select(button).classed("active")){
-    d3.select(button).classed("active",false);
-  } else {
-    d3.select(button).classed("active",true);
-  }
+  // turn on only the clicked sector button
+  d3.selectAll(".btn-custom-sector").classed("active", false);
+  d3.select(button).classed("active",true);
 
-  var activePrjSectors = [];
+  // find the active sector
+  var activePrjSector = d3.select(".btn-custom-sector.active").attr("id");
 
-  // build a list of active sectors
-  d3.selectAll(".btn-custom-sector").filter(".active").each(function(d){
-    activePrjSectors.push($(this).attr("id"));
-  });
 
   // remove highlighting from all mapped communes
   communeGroup.selectAll("path").classed("active-geo", false);
   // loop through the prj data...
   $(prjData).each(function(index, project){
-    // is this project sector an active sector?
-    if($.inArray(project.SctrCluster.replace(/\s+/g, ''), activePrjSectors) !== -1){
+    // is this project sector the active sector?
+    if(project.SctrCluster.replace(/\s+/g, '') === activePrjSector){
       // if yes, color the corresponding commune
       communeGroup.selectAll("path").filter(function(d){ return d.properties.p_code == project.CommuneCODE } )
         .classed("active-geo", true);
     }
   });
+
+  $(sectorInfo).each(function(index, info){
+    // is this project sector the active sector?
+    if(info.sector.replace(/\s+/g, '') === activePrjSector){
+      // if yes, populate the info box
+      d3.select("#info-title").text(info.sector);
+      d3.select("#info-blurb").text(info.blurb);
+      d3.select("#info-link").attr('href', info.link);
+    }
+  });
+  // info link is hidden if previous click was on a story, so need to show
+  $("#info-link").show();
+
+  $("#info").fadeIn();
+
+
 }
 
 function resetMap(){
@@ -135,5 +169,9 @@ function resetMap(){
   d3.selectAll(".btn-custom-sector").classed("active", false);
 }
 
+
+$("#dismiss").click(function(){
+  $("#info").fadeOut();
+});
 
 getGeo();

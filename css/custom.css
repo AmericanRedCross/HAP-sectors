@@ -44,6 +44,14 @@ html, body {
 #info .text {
 	color: #ffffff;
 }
+#info-title {
+	margin-top: 0px;
+}
+#info-pic {
+	max-height: 330px;
+	max-width: 375px;
+	margin-right: 16px;
+}
 #dismiss{
 	color: #f5f5f5;
 	opacity: 0.9;

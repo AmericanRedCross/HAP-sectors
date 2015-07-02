@@ -54,7 +54,7 @@ function getGeo(){
 		  .attr("r", "5px")
       .on("click",function(d) { clickedStory(d); })
       .on("mouseover", function(d){
-        var tooltipText = "<i>Story: " + d.story_name + "</i>";
+        var tooltipText = "<i>Story: " + d.title + "</i>";
         $('#tooltip').append(tooltipText);
       })
       .on("mouseout", function(){
@@ -85,8 +85,11 @@ function colorProjectAreas(){
 }
 
 function clickedStory(d){
-  d3.select("#info-title").text(d.story_name);
+  d3.select("#info-title").text(d.title);
   d3.select("#info-blurb").text(d.story);
+  var imgPath = "img/pics/" + d.story_name + ".jpg";
+  d3.select("#info-pic").attr("src", imgPath);
+  $("#info-pic").show();
   $("#info-link").hide(); // info-link is for clicked sectors
   $("#info").fadeIn();
 }
@@ -158,6 +161,8 @@ function clickedSector(button) {
   });
   // info link is hidden if previous click was on a story, so need to show
   $("#info-link").show();
+  // pics are for stories so hide the img element
+  $("#info-pic").hide();
 
   $("#info").fadeIn();
 

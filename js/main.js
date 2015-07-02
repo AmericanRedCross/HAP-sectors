@@ -31,13 +31,13 @@ function getGeo(){
       .attr("d",path)
       .attr("class", "poly-commune")
       .on("click",clickedCommune)
-      .on("mouseover", function(d){
-        var tooltipText = "<strong>" + d.properties.Commune + " Commune</strong>";
-        $('#tooltip').append(tooltipText);
-      })
-      .on("mouseout", function(){
-         $('#tooltip').empty();
-      });
+      // .on("mouseover", function(d){
+      //   var tooltipText = "<strong>" + d.properties.Commune + " Commune</strong>";
+      //   $('#tooltip').append(tooltipText);
+      // })
+      // .on("mouseout", function(){
+      //    $('#tooltip').empty();
+      // });
     // add non-Haiti landmass to map
     otherGeoGroup.selectAll("path")
       .data((communeData).filter(function(d){ return d.properties.p_code == "other" }))
@@ -46,19 +46,23 @@ function getGeo(){
       .attr("class", "poly-other");
 
     // add points for stories to map
-    storiesGroup.selectAll("circle")
+    storiesGroup.selectAll(".mark")
       .data(stories)
-      .enter().append("circle")
+      .enter().append("svg:image")
       .attr("class", "story-marker")
+      .attr("width", 25)
+      .attr("height", 25)
+      .attr("xlink:href", "/img/pin.png")
       .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";})
-		  .attr("r", "5px")
       .on("click",function(d) { clickedStory(d); })
       .on("mouseover", function(d){
         var tooltipText = "<i>Story: " + d.title + "</i>";
         $('#tooltip').append(tooltipText);
+        d3.select(this).attr("xlink:href", "/img/pin-red.png");
       })
       .on("mouseout", function(){
          $('#tooltip').empty();
+         d3.select(this).attr("xlink:href", "/img/pin.png");
       });
 
     colorProjectAreas();

@@ -1,6 +1,6 @@
 var sectorInfo = [
    {
-      "sector":"Emergency Relief",
+      "sector":"Emergency Response",
       "story_name":"emergency_relief",
       "blurb":"After the earthquake, ready-to-eat-meals were provided to survivors, like Etienne Radine and Louis Anouse, by the American Red Cross.",
       "link_1_name":"Haiti Earthquake 5-year Update",
@@ -29,14 +29,14 @@ var sectorInfo = [
       "link_2":"http://www.redcross.org/news/article/Mirebalais-Hospital-Opens-New-Units-to-serve-Haitians",
    },
    {
-      "sector":"Cholera Prevention",
+      "sector":"Cholera",
       "story_name":"cholera",
       "blurb":"Prevention efforts include vaccinations, water purification tablets, as well as distribution of oral dehydration tablets. The American Red Cross provided more than 70% of the funds needed for Haiti's first cholera vaccine, which reached 90,000 people.",
       "link_1_name":"Read about Red Cross programs to eradicate Cholera",
       "link_1":"http://www.redcross.org/news/article/Red-Cross-Continues-to-Fight-Cholera-in-Haiti",
    },
    {
-      "sector":"Water & Sanitation",
+      "sector":"Water and Sanitation",
       "story_name":"watsan",
       "blurb":"We’ve helped ensure that families have access to clean water and sanitation systems, as well as large scale public education campaigns that encourage safe hygiene. Here, workers build a septic tank for newly built housing units in Morne Lazare, Pétion-Ville.",
       "link_1_name":"Read about Red Cross's extended emergency support for clean water",
@@ -50,7 +50,7 @@ var sectorInfo = [
       "link_1":"http://www.redcross.org/news/article/In-Haiti-Entrepreneurs-Brush-Up-Their-Business-Skills",
    },
    {
-      "sector":"Disaster Preparedness",
+      "sector":"Disaster Risk Reduction",
       "story_name":"preparedness",
       "blurb":"The American Red Cross has helped families, like Dalida Cadaste’s, create customized emergency plans, so they can be ready to evacuate their homes in case of hurricanes, tropical storms or other emergencies.",
       "link_1_name":"Fact Sheet: Preparing for Disasters",

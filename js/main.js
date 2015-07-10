@@ -53,7 +53,15 @@ function getGeo(){
       .attr("width", 25)
       .attr("height", 25)
       .attr("xlink:href", "/img/pin.png")
-      .attr("transform", function(d) {return "translate(" + projection([d.long,d.lat]) + ")";})
+      .attr("transform", function(d) {
+        // take the coordinates and return pixel coordinates on the svg
+        var center = projection([d.long,d.lat]);
+        // move marker so that center (not top left) is over coordinates
+        center[0] = center[0] - 12;
+        center[1] = center[1] - 12;
+        // move the svg:img element to the correct place on the page
+        return "translate(" + center + ")";
+      })
       .on("click",function(d) { clickedStory(d); })
       .on("mouseover", function(d){
         var tooltipText = "<i>Story: " + d.title + "</i>";

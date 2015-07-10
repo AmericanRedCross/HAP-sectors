@@ -136,7 +136,7 @@ function clickedCommune(){
 function clickedSector(button) {
   // turn on only the clicked sector button
   d3.selectAll(".btn-custom-sector").classed("active", false);
-  d3.select(button).classed("active",true);
+  d3.select(button).classed("active", true);
 
   // find the active sector
   var activePrjSector = d3.select(".btn-custom-sector.active").attr("id");
@@ -160,13 +160,15 @@ function clickedSector(button) {
       // if yes, populate the info box
       d3.select("#info-title").text(info.sector);
       d3.select("#info-blurb").text(info.blurb);
-      d3.select("#info-link").attr('href', info.link);
+      d3.select("#info-link").attr('href', info.link_1);
+      var imgPath = "img/pics/" + info.story_name + ".jpg";
+      d3.select("#info-pic").attr("src", imgPath);
     }
   });
   // info link is hidden if previous click was on a story, so need to show
   $("#info-link").show();
   // pics are for stories so hide the img element
-  $("#info-pic").hide();
+  $("#info-pic").show();
 
   $("#info").fadeIn();
 

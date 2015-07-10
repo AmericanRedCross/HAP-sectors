@@ -30,14 +30,6 @@ function getGeo(){
       .enter().append("path")
       .attr("d",path)
       .attr("class", "poly-commune")
-      .on("click",clickedCommune)
-      // .on("mouseover", function(d){
-      //   var tooltipText = "<strong>" + d.properties.Commune + " Commune</strong>";
-      //   $('#tooltip').append(tooltipText);
-      // })
-      // .on("mouseout", function(){
-      //    $('#tooltip').empty();
-      // });
     // add non-Haiti landmass to map
     otherGeoGroup.selectAll("path")
       .data((communeData).filter(function(d){ return d.properties.p_code == "other" }))
@@ -56,9 +48,9 @@ function getGeo(){
       .attr("transform", function(d) {
         // take the coordinates and return pixel coordinates on the svg
         var center = projection([d.long,d.lat]);
-        // move marker so that center (not top left) is over coordinates
-        center[0] = center[0] - 12;
-        center[1] = center[1] - 12;
+        // move marker so that pin point (not top left of png) is over coordinates
+        center[0] = center[0] - 8;
+        center[1] = center[1] - 24;
         // move the svg:img element to the correct place on the page
         return "translate(" + center + ")";
       })
@@ -72,6 +64,21 @@ function getGeo(){
          $('#tooltip').empty();
          d3.select(this).attr("xlink:href", "/img/pin.png");
       });
+
+      // // if you want to see the allignment of the markers versus the actual coordinates
+      // // uncomment out the following
+      // //  you should calculate the offsets above in an image editing software, not with trial and error
+
+      // storiesGroup.selectAll("circle")
+      // .data(stories)
+      // .enter().append("circle").attr("r", 4)
+      // .attr("fill", "#ed1b2e")
+      // .attr("cx", function(d){
+      //   return projection([d.long,d.lat])[0]
+      // })
+      // .attr("cy", function(d){
+      //   return projection([d.long,d.lat])[1]
+      // })
 
     colorProjectAreas();
 
@@ -91,9 +98,6 @@ function colorProjectAreas(){
       .classed("poly-commune-hasprojects", true);
   });
 
-  // load with shelter sector active
-  // $("#Shelter").click();
-
 }
 
 function clickedStory(d){
@@ -101,44 +105,8 @@ function clickedStory(d){
   d3.select("#info-blurb").text(d.story);
   var imgPath = "img/pics/" + d.story_name + ".jpg";
   d3.select("#info-pic").attr("src", imgPath);
-  $("#info-pic").show();
-  $("#info-link").hide(); // info-link is for clicked sectors
+  $("#info-links").empty(); // info-link is for clicked sectors
   $("#info").fadeIn();
-}
-
-function clickedCommune(){
-  // // toggle the clicked commune
-  // if(d3.select(this).classed("active-geo")){
-  //   d3.select(this).classed("active-geo",false);
-  // } else {
-  //   d3.select(this).classed("active-geo",true);
-  // }
-  //
-  // var activeCommunes = [];
-  // var communePrjSectors = [];
-  //
-  // // select all highlighted communes and built a list of their p-codes
-  // communeGroup.selectAll(".active-geo").each(function(d){
-  //   activeCommunes.push(d.properties.p_code);
-  // });
-  //
-  // // loop through projects
-  // // and if the project area p-code matches a highlighted commune
-  // // and the prj sector is not yet in our list of active sectors
-  // // and the prj sector is not an empty string
-  // // then push the prj sector to our list
-  // $(prjData).each(function(index, project){
-  //   if($.inArray(project.CommuneCODE, activeCommunes) !== -1 && $.inArray(project.SctrCluster.replace(/\s+/g, ''), communePrjSectors) == -1 && project.SctrCluster !== ""){
-  //       communePrjSectors.push(project.SctrCluster.replace(/\s+/g, ''));
-  //   }
-  // });
-  // // select the buttons that correspond to our active sectors and
-  // // set them active
-  // d3.selectAll(".btn-custom-sector").classed("active", false);
-  // $(communePrjSectors).each(function(index, sector){
-  //   var selector = "#" + sector;
-  //   d3.select(selector).classed("active", true);
-  // });
 }
 
 function clickedSector(button) {
@@ -148,7 +116,6 @@ function clickedSector(button) {
 
   // find the active sector
   var activePrjSector = d3.select(".btn-custom-sector.active").attr("id");
-
 
   // remove highlighting from all mapped communes
   communeGroup.selectAll("path").classed("active-geo", false);
@@ -171,12 +138,13 @@ function clickedSector(button) {
       d3.select("#info-link").attr('href', info.link_1);
       var imgPath = "img/pics/" + info.story_name + ".jpg";
       d3.select("#info-pic").attr("src", imgPath);
+      $("#info-links").html('<ul>');
+      for(link in info.links){
+        $("#info-links").append('<li><a href ="' + link + '" target="_blank">' + info.links[link] + '</a></li>');
+      }
+      $("#info-links").append('<ul>');
     }
   });
-  // info link is hidden if previous click was on a story, so need to show
-  $("#info-link").show();
-  // pics are for stories so hide the img element
-  $("#info-pic").show();
 
   $("#info").fadeIn();
 

@@ -20,7 +20,6 @@ html, body {
 }
 #map{
 	position:fixed;
-	margin-left: -2px;
 	width: 532px;
   height: 429px;
   display: inline-block;
@@ -37,23 +36,35 @@ html, body {
 	display: inline-block;
 	background-image: url("../img/background.png");
 	background-repeat: repeat;
-	padding: 24px;
+	padding: 14px 24px 24px 24px;
 	display: none;
 
 }
 #info .text {
-	color: #ffffff;
+	color: #0d0d0d;
 }
 #info-title {
-	margin-top: 0px;
+	margin: 0px;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	background-image: url("../img/background.png");
+	background-repeat: repeat;
+}
+#info-blurb {
+	font-weight: 500;
+	font-size: 110%;
 }
 #info-pic {
 	max-height: 330px;
 	max-width: 375px;
 	margin-right: 16px;
+	margin-bottom: 50px;
 }
 #dismiss{
-	color: #f5f5f5;
+	margin: 5px;
+	color: #1a1a1a;
 	/*opacity: 0.9;*/
 	cursor: pointer;
 }

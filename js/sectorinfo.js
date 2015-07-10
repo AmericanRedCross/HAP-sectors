@@ -12,7 +12,7 @@ var sectorInfo = [
    {
       "sector":"Shelter",
       "story_name":"shelter",
-      "blurb":"In addition to providing more permanent shelter solutions, retrofitting homes and repairing infrastructure, training has been provided to construction workers, like Aldomoro Victor (center) and Pierre- Richard Etienne, on safer building practices that will make houses more resistant to natural disasters.",
+      "blurb":"In addition to providing more permanent shelter solutions, retrofitting homes and repairing infrastructure, training has been provided to construction workers, like Aldomoro Victor (center) and Pierre-Richard Etienne, on safer building practices that will make houses more resistant to natural disasters.",
       "links": {
          "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m51740178_American_Red_Cross_Housing_in_Haiti.pdf": "Fact Sheet: Behind the Numbers: American Red Cross Housing Solutions in Haiti",
          "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m44140254_Improving_Housing_in_Haiti.pdf": "Fact Sheet: Improving Housing in Haiti"

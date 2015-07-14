@@ -18,7 +18,7 @@ var stories = [
     "story_name":"canaan",
     "long":-72.2708129883,
     "lat":18.6982854741,
-    "story":"After the earthquake, many Haitian families decided to move out of Port-au-Prince and settle in Canaan, a rapidly emerging city about 30 minutes’ drive from the capital city. The American Red Cross is working to make sure Canaan’s development is carried out in a safe, healthy, and sustainable way. We are supporting families by investing in safe housing and livelihood support, basic infrastructure, disaster preparedness, and other programs that ensure residents are resilient to any disasters that may come their way."
+    "story":"After the earthquake, many Haitian families decided to move out of Port-au-Prince and settle in Canaan, a rapidly emerging city about 30 minutes drive from the capital city. The American Red Cross is working to make sure Canaan’s development is carried out in a safe, healthy, and sustainable way. We are supporting families by investing in safe housing and livelihood support, basic infrastructure, disaster preparedness, and other programs that ensure residents are resilient to any disasters that may come their way."
   },
   {
     "title":"Mother",
@@ -39,7 +39,7 @@ var stories = [
     "story_name":"soil",
     "long":-72.1241998,
     "lat":19.670388,
-    "story":"The American Red Cross is building eco-friendly toilets alongside SOIL Haiti, so that families have access to safe & dignified sanitation. After use, people pour a mix of ground peanut shells and sugarcane splinters into the dry toilets. Waste is collected and turned into compost! Access to safe water and sanitation can prevent waterborne illness, keep girls in school, reduce gender-based violence, and so much more. The American Red Cross is funding and working with partner SOIL in northern Haiti to install 200 household or communal toilets and to expand the capacity of their composting waste treatment facility."
+    "story":"The American Red Cross is building eco-friendly toilets alongside SOIL Haiti, so that families have access to safe and dignified sanitation. After use, people pour a mix of ground peanut shells and sugarcane splinters into the dry toilets. Waste is collected and turned into compost! Access to safe water and sanitation can prevent waterborne illness, keep girls in school, reduce gender-based violence, and so much more. The American Red Cross is funding and working with partner SOIL in northern Haiti to install 200 household or communal toilets and to expand the capacity of their composting waste treatment facility."
   },
   {
     "title":"Junior",
@@ -53,7 +53,7 @@ var stories = [
     "story_name":"dominique",
     "long":-72.2158813477,
     "lat":18.4665837676,
-    "story":"Artisan Dominique Milias is one of the 75 entrepreneurs who are honing their business and marketing skills through the American Red Cross. These business owners learn how to define their market, assess their advantage over the competition, and reach out to new customers. The program is part of an American Red Cross initiative to improve economic opportunities in Carrefour-Feuilles—a community badly damaged by the 2010 earthquake."
+    "story":"Artisan Dominique Milias is one of the 75 entrepreneurs who are honing their business and marketing skills through the American Red Cross. These business owners learn how to define their market, assess their advantage over the competition, and reach out to new customers. The program is part of an American Red Cross initiative to improve economic opportunities in Carrefour-Feuilles — a community badly damaged by the 2010 earthquake."
   },
   {
     "title":"Newborn",
@@ -67,6 +67,6 @@ var stories = [
     "story_name":"landy",
     "long":-72.2323608398,
     "lat":18.5876807011,
-    "story":"Landy used to stay home after sunset, too afraid to walk around or run errands in the darkness. But when the American Red Cross installed solar streetlights in her neighborhood, everything changed. Landy now sells grilled corn under the streetlights without fearing for her safety. Her female friends agree that they feel safer being out alone in the evenings and are less worried about falling on the rocky and uneven paths.  The streetlights can prevent crime, reduce gender-based violence, allow kids to do their homework after dark, and extend the hours during which residents can walk and conduct business in the neighborhood."
+    "story":"Landy used to stay home after sunset, too afraid to walk around or run errands in the darkness. But when the American Red Cross installed solar streetlights in her neighborhood, everything changed. Landy now sells grilled corn under the streetlights without fearing for her safety. Her female friends agree that they feel safer being out alone in the evenings and are less worried about falling on the rocky and uneven paths. The streetlights can prevent crime, reduce gender-based violence, allow kids to do their homework after dark, and extend the hours during which residents can walk and conduct business in the neighborhood."
   }
 ]

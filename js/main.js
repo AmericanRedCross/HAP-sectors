@@ -38,31 +38,27 @@ function getGeo(){
       .attr("class", "poly-other");
 
     // add points for stories to map
-    storiesGroup.selectAll(".mark")
+    d3.select("#custom-marker-pane").selectAll("div")
       .data(stories)
-      .enter().append("svg:image")
+      .enter().append("div")
       .attr("class", "story-marker")
-      .attr("width", 25)
-      .attr("height", 25)
-      .attr("xlink:href", "/img/pin.png")
-      .attr("transform", function(d) {
-        // take the coordinates and return pixel coordinates on the svg
-        var center = projection([d.long,d.lat]);
-        // move marker so that pin point (not top left of png) is over coordinates
-        center[0] = center[0] - 8;
-        center[1] = center[1] - 24;
-        // move the svg:img element to the correct place on the page
-        return "translate(" + center + ")";
+      .style("top", function(d){
+        var top = Math.round(projection([d.long,d.lat])[1]) - 24;
+        return top + "px";
+      })
+      .style("left", function(d){
+        var left = Math.round(projection([d.long,d.lat])[0]) - 8;
+        return left + "px";
       })
       .on("click",function(d) { clickedStory(d); })
       .on("mouseover", function(d){
         var tooltipText = "<i>Story: " + d.title + "</i>";
         $('#tooltip').append(tooltipText);
-        d3.select(this).attr("xlink:href", "/img/pin-red.png");
+        d3.select(this).classed("active", true);
       })
       .on("mouseout", function(){
          $('#tooltip').empty();
-         d3.select(this).attr("xlink:href", "/img/pin.png");
+         d3.select(this).classed("active", false);
       });
 
       // // if you want to see the allignment of the markers versus the actual coordinates

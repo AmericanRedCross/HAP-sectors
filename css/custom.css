@@ -16,7 +16,15 @@ html, body {
 	position: relative;
 	padding-left:8px;
 	padding-top: 12px;
-	z-index:2;
+	z-index:3;
+}
+#custom-marker-pane{
+	position:fixed;
+	/*margin-left: -2px;*/
+	width: 763px;
+	height: 429px;
+	display: inline-block;
+	z-index: 2;
 }
 #map{
 	position:fixed;
@@ -32,7 +40,7 @@ html, body {
 	height: 429px;
 	left:0;
 	top:0;
-	z-index: 3;
+	z-index: 4;
 	display: inline-block;
 	background-image: url("../img/background.png");
 	background-repeat: repeat;
@@ -182,11 +190,20 @@ only screen and (min-resolution: 240dpi) {
     stroke: #9f9fa3;
     fill: #e3e3e3;
 }
-.story-marker{
-	cursor: pointer;
-	fill: #ecb731;
-	stroke: #6d6e70;
 
+.story-marker {
+	height: 25px;
+	width: 25px;
+	background-image: url(../img/pin.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	cursor: pointer;
+}
+.story-marker.active{
+	background-image: url(../img/pin-red.png);
 }
 #tooltip {
     position:fixed;

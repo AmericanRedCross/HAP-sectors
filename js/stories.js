@@ -4,7 +4,7 @@ var stories = [
     "story_name":"martine",
     "long":-72.332611084,
     "lat":18.6006967637,
-    "story":"Martine Jozef’s mother expressed her gratitude in the first year following the earthquake, “With the financial support the American Red Cross gave us, I am sending her back to school again. Thank you.”"
+    "story":"Martine Jozef’s mother expressed her gratitude in the first year following the earthquake, \"With the financial support the American Red Cross gave us, I am sending her back to school again. Thank you.\""
   },
   {
     "title":"Soccer",
@@ -25,7 +25,7 @@ var stories = [
     "story_name":"mother",
     "long":-72.5228609,
     "lat":19.8451211,
-    "story":"The Red Cross funds and supports HOPE, a Haitian organization whose medical professionals trek over five miles, on foot, to run mobile medical clinics in hard-to-reach rural communities. In Borgne, the number of women attending prenatal clinics is far below the number of pregnant women who live there. In order to help pregnant women, HOPE also runs mothers’ clubs: weekly group meetings in which 20-30 women discuss pre- and post-natal and infant health, family planning, nutrition and cholera prevention."
+    "story":"The Red Cross funds and supports HOPE, a Haitian organization whose medical professionals trek over five miles, on foot, to run mobile medical clinics in hard-to-reach rural communities. In Borgne, the number of women attending prenatal clinics is far below the number of pregnant women who live there. In order to help pregnant women, HOPE also runs mothers’ clubs: weekly group meetings in which 20-30 women discuss pre- and post-natal and infant health, family planning, nutrition, and cholera prevention."
   },
   {
     "title":"Father",
@@ -60,7 +60,7 @@ var stories = [
     "story_name":"newborn",
     "long":-72.104836,
     "lat":18.8344163,
-    "story":"Ever since she found out she was pregnant, Elièse Louis has been coming from her neighborhood of Bel Air to Mirebalais Hospital to receive ongoing prenatal care. In June 2014, she gave birth to a beautiful baby boy, Lovensky, who is snuggled next to her in the maternity ward. “They’ve taken very good care of me,” she said. “The hospital offers a very good service. I pray for it to never change.” The American Red Cross provided $5.5 million for the construction, equipment, and opening of this hospital, run by Partners in Health and the Ministry of Public Health and Population."
+    "story":"Ever since she found out she was pregnant, Elièse Louis has been coming from her neighborhood of Bel Air to Mirebalais Hospital to receive ongoing prenatal care. In June 2014, she gave birth to a beautiful baby boy, Lovensky, who is snuggled next to her in the maternity ward. \"They’ve taken very good care of me,\" she said. \"The hospital offers a very good service. I pray for it to never change.\" The American Red Cross provided $5.5 million for the construction, equipment, and opening of this hospital, run by Partners in Health and the Ministry of Public Health and Population."
   },
   {
     "title":"Landy",

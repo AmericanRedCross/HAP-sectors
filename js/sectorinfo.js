@@ -2,7 +2,7 @@ var sectorInfo = [
    {
       "sector":"Emergency Response",
       "story_name":"emergency_relief",
-      "blurb":"Donations to the American Red Cross kept people alive in the wake of the earthquake. The Red Cross provided lifesaving services and supplies such as water, food, medical services, and tarps to people displaced from their homes. In the first six months alone, the American Red Cross spent $148.5 million helping people like Mabila Ethienne, who is pictured here carrying blankets, tarps, kitchen kits and hygiene kits distributed by the American Red Cross at Camp Simon, Le Betemont.",
+      "blurb":"Donations to the American Red Cross kept people alive in the wake of the earthquake. The Red Cross provided lifesaving services and supplies such as water, food, medical services, and tarps to people displaced from their homes. In the first six months alone, the American Red Cross spent $148.5 million helping people like Mabila Ethienne, who is pictured here carrying blankets, tarps, kitchen kits, and hygiene kits distributed by the American Red Cross at Camp Simon, Le Betemont.",
       "links": {
          "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m51740138_HaitiFiveYearUpdate-2.pdf": "Haiti Earthquake 5-year Update",
          "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m27740093_Haiti_Four_Year_Update.pdf": "Haiti Earthquake 4-year Update",
@@ -23,7 +23,7 @@ var sectorInfo = [
    {
       "sector":"Health",
       "story_name":"health",
-      "blurb":"The American Red Cross has helped repair, construct or operate eight hospitals and clinics, including a $5.5 million contribution for Mirebalais University Hospital, run by Partners In Health. For 27 months following the earthquake, the American Red Cross paid for salaries and operating expenses at Bernard Mevs Hospital Project Medishare, to ensure services were not interrupted. We are proud to have worked with many partners to address wide-scale community health, prosthetics care, disease prevention, and more health services to the Haitian population, still in place today.",
+      "blurb":"The American Red Cross has helped repair, construct, or operate eight hospitals and clinics, including a $5.5 million contribution for Mirebalais University Hospital, run by Partners In Health. For 27 months following the earthquake, the American Red Cross paid for salaries and operating expenses at Bernard Mevs Hospital Project Medishare, to ensure services were not interrupted. We are proud to have worked with many partners to address wide-scale community health, prosthetics care, disease prevention, and more health services to the Haitian population, still in place today.",
       "links": {
          "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m42240140_Preventing_Disease_and_Improving_Healthcare_Factsheet.pdf": "Fact Sheet: Preventing Disease and Improving Healthcare",
          "http://www.redcross.org/news/article/Mirebalais-Hospital-Opens-New-Units-to-serve-Haitians": "Read about an innovative teaching hospital in Mirebalais",
@@ -41,7 +41,7 @@ var sectorInfo = [
    {
       "sector":"Water and Sanitation",
       "story_name":"watsan",
-      "blurb":"Thanks to donations to the American Red Cross, 556,000 Haitians are benefiting from access to improved water and sanitation. Water, sanitation and hygiene promotion activities such as latrine construction and waste collection have complemented all housing and health projects. The American Red Cross provided financial support to help construct Haiti’s first wastewater treatment plant, but also works on the household level by helping install composting toilets in individual homes. Here, workers build a septic tank for newly-built housing units in Morne Lazare, Pétion-Ville.",
+      "blurb":"Thanks to donations to the American Red Cross, 556,000 Haitians are benefiting from access to improved water and sanitation. Water, sanitation, and hygiene promotion activities such as latrine construction and waste collection have complemented all housing and health projects. The American Red Cross provided financial support to help construct Haiti’s first wastewater treatment plant, but also works on the household level by helping install composting toilets in individual homes. Here, workers build a septic tank for newly-built housing units in Morne Lazare, Pétion-Ville.",
       "links": {
          "http://www.redcross.org/news/article/Red-Cross-Helping-Haiti-Deliver-Water": "Read about Red Cross's extended emergency support for clean water"
       }
@@ -49,7 +49,7 @@ var sectorInfo = [
    {
       "sector":"Livelihoods",
       "story_name":"livelihoods",
-      "blurb":"With more than half of Haiti’s population under the age of 24 and high levels of youth unemployment, improving access to economic opportunities is essential. The American Red Cross has spent or committed $48 million to job training and creation, cash grants, small business support, and other livelihoods programs in Haiti. We seek to improve household and community stability through savings programs, conditional loans and vocational training. Ginette Antenor, the owner of Cymara’s beauty salon, participates in one such program that helps entrepreneurs hone business and marketing skills through training and support.",
+      "blurb":"With more than half of Haiti’s population under the age of 24 and high levels of youth unemployment, improving access to economic opportunities is essential. The American Red Cross has spent or committed $48 million to job training and creation, cash grants, small business support, and other livelihoods programs in Haiti. We seek to improve household and community stability through savings programs, conditional loans, and vocational training. Ginette Antenor, the owner of Cymara’s beauty salon, participates in one such program that helps entrepreneurs hone business and marketing skills through training and support.",
       "links": {
          "http://www.redcross.org/news/article/In-Haiti-Entrepreneurs-Brush-Up-Their-Business-Skills": "In Haiti Entrepreneurs Brush Up on their Business Skills"
       }
@@ -57,7 +57,7 @@ var sectorInfo = [
    {
       "sector":"Disaster Risk Reduction",
       "story_name":"preparedness",
-      "blurb":"Although major events like the January 2010 earthquake are often the most visible, Haiti faces frequent natural disasters, including floods and hurricanes. The American Red Cross has reached more than 551,000 people with disaster preparedness activities in Haiti; this includes training emergency teams in search-and-rescue and first aid; creating family emergency plans; and installing early warning systems in neighborhoods. The American Red Cross has helped families, like Dalida Cadaste’s, create customized emergency plans, so they are ready in case of hurricanes, tropical storms, earthquakes or other emergencies.",
+      "blurb":"Although major events like the January 2010 earthquake are often the most visible, Haiti faces frequent natural disasters, including floods and hurricanes. The American Red Cross has reached more than 551,000 people with disaster preparedness activities in Haiti; this includes training emergency teams in search-and-rescue and first aid; creating family emergency plans; and installing early warning systems in neighborhoods. The American Red Cross has helped families, like Dalida Cadaste’s, create customized emergency plans, so they are ready in case of hurricanes, tropical storms, earthquakes, or other emergencies.",
       "links": {
          "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m28640086_Preparing_for_Disasters_in_Haiti_-_February_2014.pdf": "Fact Sheet: Preparing for Disasters"
       }

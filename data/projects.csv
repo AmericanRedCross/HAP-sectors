@@ -1,5 +1,5 @@
 ID,PROJECT_NAME,SctrCluster,CommuneCODE
-131,(Cholera Program) HRC,WatSan,321
+131,(Cholera Program) HRC,Water and Sanitation,321
 152,(QAF) HRC Response to Chikungunya outbreak,Health,922
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,151
 26,(PrevSIDA Master) HIV Prevention to Youth and High Risk Populations,Health,234
@@ -21,16 +21,16 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 126,ARC: Community Health Volunteers,Health,332
 134,(Gran No Pi Djanm) Evacuation Centers,Disaster Risk Reduction,332
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,332
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,332
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,332
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,332
 113,(Gran No Pi Djanm) ARC Direct Implementation,Disaster Risk Reduction,932
 114,(Gran No Pi Djanm) ARC/HRC Project Agreement,Disaster Risk Reduction,932
 134,(Gran No Pi Djanm) Evacuation Centers,Disaster Risk Reduction,932
 136,ARC: Northern Livelihoods Development [PADF],Livelihoods,932
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,932
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,932
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,932
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,932
-131,(Cholera Program) HRC,WatSan,913
+131,(Cholera Program) HRC,Water and Sanitation,913
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,833
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,632
 94,(QAF) Returnee Support at the Haitian Dominican Border,Emergency Response,632
@@ -39,10 +39,10 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 36,HOPE: Mobile Health Clinic in Borgne,Health,351
 113,(Gran No Pi Djanm) ARC Direct Implementation,Disaster Risk Reduction,351
 114,(Gran No Pi Djanm) ARC/HRC Project Agreement,Disaster Risk Reduction,351
-130,(Cholera Program) Oxfam,WatSan,351
+130,(Cholera Program) Oxfam,Water and Sanitation,351
 134,(Gran No Pi Djanm) Evacuation Centers,Disaster Risk Reduction,351
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,351
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,351
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,351
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,351
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,623
 34,ARC: Cholera Prevention in Camps and Communities,Cholera,142
@@ -57,13 +57,13 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,311
 51,IOM: Host Family Support,Livelihoods,311
 106,(PrevSIDA) PSI,Health,311
-130,(Cholera Program) Oxfam,WatSan,311
+130,(Cholera Program) Oxfam,Water and Sanitation,311
 28,Community Health and Malaria Prevention in Northeastern Haiti,Health,434
 113,(Gran No Pi Djanm) ARC Direct Implementation,Disaster Risk Reduction,434
 114,(Gran No Pi Djanm) ARC/HRC Project Agreement,Disaster Risk Reduction,434
 134,(Gran No Pi Djanm) Evacuation Centers,Disaster Risk Reduction,434
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,434
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,434
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,434
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,434
 21,WFP: Emergency Food,Emergency Response,113
 22,ARC: MRE Donation to WFP,Emergency Response,113
@@ -73,8 +73,8 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 39,International Medical Corps: Cholera Prevention and Treatment Efforts,Cholera,113
 40,Save the Children: Cholera Programming in Port au Prince,Cholera,113
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,113
-55,CRS: Waste Collection and Disposal in Port au Prince,WatSan,113
-59,International Medical Corps: Improving Water and Sanitation Services,WatSan,113
+55,CRS: Waste Collection and Disposal in Port au Prince,Water and Sanitation,113
+59,International Medical Corps: Improving Water and Sanitation Services,Water and Sanitation,113
 62,ARC EDRR: Disaster Preparedness and Risk Reduction in Camps,Disaster Risk Reduction,113
 66,ACTED: Transitional Homes,Shelter,113
 72,Habitat for Humanity: Emergency Shelter,Shelter,113
@@ -86,7 +86,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 117,(USAID) Tapis Rouge Housing,Shelter,113
 120,(CIF) Viva Rio,,113
 152,(QAF) HRC Response to Chikungunya outbreak,Health,113
-131,(Cholera Program) HRC,WatSan,914
+131,(Cholera Program) HRC,Water and Sanitation,914
 48,Danish Red Cross: Host Family Support,Livelihoods,713
 29,Together We Can: HIV Prevention,Health,117
 30,UN Foundation: Coordinated Vaccination Campaign - Round 1,Health,117
@@ -111,7 +111,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 29,Together We Can: HIV Prevention,Health,112
 30,UN Foundation: Coordinated Vaccination Campaign - Round 1,Health,112
 40,Save the Children: Cholera Programming in Port au Prince,Cholera,112
-55,CRS: Waste Collection and Disposal in Port au Prince,WatSan,112
+55,CRS: Waste Collection and Disposal in Port au Prince,Water and Sanitation,112
 62,ARC EDRR: Disaster Preparedness and Risk Reduction in Camps,Disaster Risk Reduction,112
 66,ACTED: Transitional Homes,Shelter,112
 75,Haven: Transitional Homes,Shelter,112
@@ -125,7 +125,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 126,ARC: Community Health Volunteers,Health,412
 134,(Gran No Pi Djanm) Evacuation Centers,Disaster Risk Reduction,412
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,412
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,412
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,412
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,412
 24,(QAF) Hurricane Sandy Response,Emergency Response,411
 26,(PrevSIDA Master) HIV Prevention to Youth and High Risk Populations,Health,411
@@ -141,7 +141,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 30,UN Foundation: Coordinated Vaccination Campaign - Round 1,Health,123
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,123
 71,Handicap International: Transitional Homes,Shelter,123
-129,(Cholera Program) Norwegian Red Cross,WatSan,123
+129,(Cholera Program) Norwegian Red Cross,Water and Sanitation,123
 44,PiH: Cholera Vaccines,Cholera,543
 30,UN Foundation: Coordinated Vaccination Campaign - Round 1,Health,116
 70,Fuller Center: Permanent Multi-Family Housing Units,Shelter,116
@@ -164,7 +164,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 114,(Gran No Pi Djanm) ARC/HRC Project Agreement,Disaster Risk Reduction,345
 134,(Gran No Pi Djanm) Evacuation Centers,Disaster Risk Reduction,345
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,345
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,345
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,345
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,345
 21,WFP: Emergency Food,Emergency Response,121
 22,ARC: MRE Donation to WFP,Emergency Response,121
@@ -175,7 +175,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 69,Spanish Red Cross: Progressive Shelter,Shelter,121
 72,Habitat for Humanity: Emergency Shelter,Shelter,121
 73,Habitat for Humanity: Transitional Homes,Shelter,121
-127,(Cholera Program) Swiss Red Cross,WatSan,121
+127,(Cholera Program) Swiss Red Cross,Water and Sanitation,121
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,711
 51,IOM: Host Family Support,Livelihoods,711
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,361
@@ -183,14 +183,14 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,212
 152,(QAF) HRC Response to Chikungunya outbreak,Health,212
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,323
-130,(Cholera Program) Oxfam,WatSan,323
+130,(Cholera Program) Oxfam,Water and Sanitation,323
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,1011
 47,Mercy Corps: Host Family Support,Livelihoods,621
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,621
 89,PiH: Mirebalais Hospital,Health,621
-130,(Cholera Program) Oxfam,WatSan,443
+130,(Cholera Program) Oxfam,Water and Sanitation,443
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,423
-130,(Cholera Program) Oxfam,WatSan,423
+130,(Cholera Program) Oxfam,Water and Sanitation,423
 146,(CIF Master) Community Investment Fund,,0
 150,(QAF Master) Quick Action Fund,,0
 151,(Cholera Program Master) Cholera Treatment and Prevention,Cholera,0
@@ -223,20 +223,20 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 114,(Gran No Pi Djanm) ARC/HRC Project Agreement,Disaster Risk Reduction,421
 134,(Gran No Pi Djanm) Evacuation Centers,Disaster Risk Reduction,421
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,421
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,421
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,421
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,421
 28,Community Health and Malaria Prevention in Northeastern Haiti,Health,413
-131,(Cholera Program) HRC,WatSan,413
+131,(Cholera Program) HRC,Water and Sanitation,413
 26,(PrevSIDA Master) HIV Prevention to Youth and High Risk Populations,Health,114
 29,Together We Can: HIV Prevention,Health,114
 30,UN Foundation: Coordinated Vaccination Campaign - Round 1,Health,114
 33,ARC: Post-Earthquake Health and Hygiene Promotion in Camps,Health,114
-55,CRS: Waste Collection and Disposal in Port au Prince,WatSan,114
+55,CRS: Waste Collection and Disposal in Port au Prince,Water and Sanitation,114
 62,ARC EDRR: Disaster Preparedness and Risk Reduction in Camps,Disaster Risk Reduction,114
 66,ACTED: Transitional Homes,Shelter,114
 81,(CIF) Global Therapy Group Phase I,Health,114
 106,(PrevSIDA) PSI,Health,114
-111,UNOPS: 16/6 Sanitation Project,WatSan,114
+111,UNOPS: 16/6 Sanitation Project,Water and Sanitation,114
 141,(CIF) Global Therapy Group Phase II,,114
 26,(PrevSIDA Master) HIV Prevention to Youth and High Risk Populations,Health,122
 29,Together We Can: HIV Prevention,Health,122
@@ -244,7 +244,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 71,Handicap International: Transitional Homes,Shelter,122
 72,Habitat for Humanity: Emergency Shelter,Shelter,122
 106,(PrevSIDA) PSI,Health,122
-129,(Cholera Program) Norwegian Red Cross,WatSan,122
+129,(Cholera Program) Norwegian Red Cross,Water and Sanitation,122
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,344
 26,(PrevSIDA Master) HIV Prevention to Youth and High Risk Populations,Health,911
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,911
@@ -254,7 +254,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 136,ARC: Northern Livelihoods Development [PADF],Livelihoods,911
 152,(QAF) HRC Response to Chikungunya outbreak,Health,911
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,911
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,911
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,911
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,911
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,352
 21,WFP: Emergency Food,Emergency Response,111
@@ -266,8 +266,8 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 30,UN Foundation: Coordinated Vaccination Campaign - Round 1,Health,111
 33,ARC: Post-Earthquake Health and Hygiene Promotion in Camps,Health,111
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,111
-55,CRS: Waste Collection and Disposal in Port au Prince,WatSan,111
-57,Concern: Improving drainage in Place-de-la-Paix,WatSan,111
+55,CRS: Waste Collection and Disposal in Port au Prince,Water and Sanitation,111
+57,Concern: Improving drainage in Place-de-la-Paix,Water and Sanitation,111
 62,ARC EDRR: Disaster Preparedness and Risk Reduction in Camps,Disaster Risk Reduction,111
 65,UNOPS: Transitional Homes,Shelter,111
 66,ACTED: Transitional Homes,Shelter,111
@@ -297,7 +297,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 115,(LAMIKA Pillar I) ARC Direct Implementation,Shelter,111
 115,(LAMIKA Pillar I) ARC Direct Implementation,Shelter,111
 115,(LAMIKA Pillar I) ARC Direct Implementation,Shelter,111
-135,SOIL: Environmental Market-Driven Sanitation,WatSan,111
+135,SOIL: Environmental Market-Driven Sanitation,Water and Sanitation,111
 137,ARC: Carrefour-Feuilles Livelihoods Development [CECI],Livelihoods,111
 137,ARC: Carrefour-Feuilles Livelihoods Development [CECI],Livelihoods,111
 137,ARC: Carrefour-Feuilles Livelihoods Development [CECI],Livelihoods,111
@@ -318,7 +318,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 149,(LAMIKA) Monitoring and Evaluation,Shelter,111
 152,(QAF) HRC Response to Chikungunya outbreak,Health,111
 666,(LAMIKA) Monitoring and Evaluation,Health,111
-666,(LAMIKA) Monitoring and Evaluation,WatSan,112
+666,(LAMIKA) Monitoring and Evaluation,Water and Sanitation,112
 666,(LAMIKA) Monitoring and Evaluation,Shelter,113
 666,(LAMIKA) Monitoring and Evaluation,Livelihoods,114
 666,(LAMIKA) Monitoring and Evaluation,Disaster Risk Reduction,115
@@ -326,7 +326,7 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 113,(Gran No Pi Djanm) ARC Direct Implementation,Disaster Risk Reduction,343
 114,(Gran No Pi Djanm) ARC/HRC Project Agreement,Disaster Risk Reduction,343
 113,(Gran No Pi Djanm) ARC Direct Implementation,Livelihoods,343
-113,(Gran No Pi Djanm) ARC Direct Implementation,WatSan,343
+113,(Gran No Pi Djanm) ARC Direct Implementation,Water and Sanitation,343
 113,(Gran No Pi Djanm) ARC Direct Implementation,Health,343
 152,(QAF) HRC Response to Chikungunya outbreak,Health,921
 44,PiH: Cholera Vaccines,Cholera,531
@@ -337,20 +337,20 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 28,Community Health and Malaria Prevention in Northeastern Haiti,Health,432
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,622
 30,UN Foundation: Coordinated Vaccination Campaign - Round 1,Health,118
-55,CRS: Waste Collection and Disposal in Port au Prince,WatSan,118
+55,CRS: Waste Collection and Disposal in Port au Prince,Water and Sanitation,118
 62,ARC EDRR: Disaster Preparedness and Risk Reduction in Camps,Disaster Risk Reduction,118
 66,ACTED: Transitional Homes,Shelter,118
 106,(PrevSIDA) PSI,Health,118
 109,UN Habitat: Camp Formalization,Shelter,118
 24,(QAF) Hurricane Sandy Response,Emergency Response,433
 28,Community Health and Malaria Prevention in Northeastern Haiti,Health,433
-130,(Cholera Program) Oxfam,WatSan,433
+130,(Cholera Program) Oxfam,Water and Sanitation,433
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,233
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,613
 48,Danish Red Cross: Host Family Support,Livelihoods,712
 28,Community Health and Malaria Prevention in Northeastern Haiti,Health,431
 49,Fonkoze: Livelihoods and Host Family Support,Livelihoods,431
-130,(Cholera Program) Oxfam,WatSan,441
+130,(Cholera Program) Oxfam,Water and Sanitation,441
 47,Mercy Corps: Host Family Support,Livelihoods,532
 31,UN Foundation: Coordinated Vaccination Campaign - Round 2,Health,0
 34,ARC: Cholera Prevention in Camps and Communities,Cholera,3
@@ -369,10 +369,10 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 50,Mercy Corps: Cash-for-work,Livelihoods,11
 52,ARC: School Vouchers,Livelihoods,0
 53,ARC: Cash Grants to Residents of Camps in High-risk Areas (pilot),Livelihoods,13
-54,IRC: Latrine De-sludging,WatSan,11
-58,IRC: Improving Water and Sanitation Services,WatSan,11
-60,American Refugee Committee: Water and Sanitation Services,WatSan,11
-61,American Refugee Committee: Improving Water and Sanitation Services,WatSan,11
+54,IRC: Latrine De-sludging,Water and Sanitation,11
+58,IRC: Improving Water and Sanitation Services,Water and Sanitation,11
+60,American Refugee Committee: Water and Sanitation Services,Water and Sanitation,11
+61,American Refugee Committee: Improving Water and Sanitation Services,Water and Sanitation,11
 64,HRC: Kouri Di Vwazen'w (Tell Your Neighbor),Disaster Risk Reduction,0
 74,French Red Cross: Shelter Paint Kits,Shelter,0
 79,World Wildlife Fund: Haiti Green Recovery Project,Disaster Risk Reduction,0
@@ -386,8 +386,8 @@ ID,PROJECT_NAME,SctrCluster,CommuneCODE
 123,(CIF) Sisters in the North,,0
 124,(LAMIKA) HRC Support,Disaster Risk Reduction,0
 125,(PrevSIDA) Livelihoods,Livelihoods,0
-128,(Cholera Program) French Red Cross,WatSan,1
-128,(Cholera Program) French Red Cross,WatSan,5
+128,(Cholera Program) French Red Cross,Water and Sanitation,1
+128,(Cholera Program) French Red Cross,Water and Sanitation,5
 132,(OD) Training Center North,,0
 138,ARC: Youth Projection Program,,0
 140,ARC: Learning Conference 2015,Disaster Risk Reduction,0

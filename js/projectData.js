@@ -2,7 +2,7 @@ var prjData = [
   {
     "ID":131,
     "PROJECT_NAME":"(Cholera Program) HRC",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":321
   },
   {
@@ -134,7 +134,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":332
   },
   {
@@ -176,7 +176,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":932
   },
   {
@@ -188,7 +188,7 @@ var prjData = [
   {
     "ID":131,
     "PROJECT_NAME":"(Cholera Program) HRC",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":913
   },
   {
@@ -242,7 +242,7 @@ var prjData = [
   {
     "ID":130,
     "PROJECT_NAME":"(Cholera Program) Oxfam",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":351
   },
   {
@@ -260,7 +260,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":351
   },
   {
@@ -350,7 +350,7 @@ var prjData = [
   {
     "ID":130,
     "PROJECT_NAME":"(Cholera Program) Oxfam",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":311
   },
   {
@@ -386,7 +386,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":434
   },
   {
@@ -446,13 +446,13 @@ var prjData = [
   {
     "ID":55,
     "PROJECT_NAME":"CRS: Waste Collection and Disposal in Port au Prince",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":113
   },
   {
     "ID":59,
     "PROJECT_NAME":"International Medical Corps: Improving Water and Sanitation Services",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":113
   },
   {
@@ -524,7 +524,7 @@ var prjData = [
   {
     "ID":131,
     "PROJECT_NAME":"(Cholera Program) HRC",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":914
   },
   {
@@ -674,7 +674,7 @@ var prjData = [
   {
     "ID":55,
     "PROJECT_NAME":"CRS: Waste Collection and Disposal in Port au Prince",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":112
   },
   {
@@ -758,7 +758,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":412
   },
   {
@@ -854,7 +854,7 @@ var prjData = [
   {
     "ID":129,
     "PROJECT_NAME":"(Cholera Program) Norwegian Red Cross",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":123
   },
   {
@@ -992,7 +992,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":345
   },
   {
@@ -1058,7 +1058,7 @@ var prjData = [
   {
     "ID":127,
     "PROJECT_NAME":"(Cholera Program) Swiss Red Cross",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":121
   },
   {
@@ -1106,7 +1106,7 @@ var prjData = [
   {
     "ID":130,
     "PROJECT_NAME":"(Cholera Program) Oxfam",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":323
   },
   {
@@ -1136,7 +1136,7 @@ var prjData = [
   {
     "ID":130,
     "PROJECT_NAME":"(Cholera Program) Oxfam",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":443
   },
   {
@@ -1148,7 +1148,7 @@ var prjData = [
   {
     "ID":130,
     "PROJECT_NAME":"(Cholera Program) Oxfam",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":423
   },
   {
@@ -1346,7 +1346,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":421
   },
   {
@@ -1364,7 +1364,7 @@ var prjData = [
   {
     "ID":131,
     "PROJECT_NAME":"(Cholera Program) HRC",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":413
   },
   {
@@ -1394,7 +1394,7 @@ var prjData = [
   {
     "ID":55,
     "PROJECT_NAME":"CRS: Waste Collection and Disposal in Port au Prince",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":114
   },
   {
@@ -1424,7 +1424,7 @@ var prjData = [
   {
     "ID":111,
     "PROJECT_NAME":"UNOPS: 16/6 Sanitation Project",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":114
   },
   {
@@ -1472,7 +1472,7 @@ var prjData = [
   {
     "ID":129,
     "PROJECT_NAME":"(Cholera Program) Norwegian Red Cross",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":122
   },
   {
@@ -1532,7 +1532,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":911
   },
   {
@@ -1604,13 +1604,13 @@ var prjData = [
   {
     "ID":55,
     "PROJECT_NAME":"CRS: Waste Collection and Disposal in Port au Prince",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":111
   },
   {
     "ID":57,
     "PROJECT_NAME":"Concern: Improving drainage in Place-de-la-Paix",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":111
   },
   {
@@ -1790,7 +1790,7 @@ var prjData = [
   {
     "ID":135,
     "PROJECT_NAME":"SOIL: Environmental Market-Driven Sanitation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":111
   },
   {
@@ -1916,7 +1916,7 @@ var prjData = [
   {
     "ID":666,
     "PROJECT_NAME":"(LAMIKA) Monitoring and Evaluation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":112
   },
   {
@@ -1964,7 +1964,7 @@ var prjData = [
   {
     "ID":113,
     "PROJECT_NAME":"(Gran No Pi Djanm) ARC Direct Implementation",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":343
   },
   {
@@ -2030,7 +2030,7 @@ var prjData = [
   {
     "ID":55,
     "PROJECT_NAME":"CRS: Waste Collection and Disposal in Port au Prince",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":118
   },
   {
@@ -2072,7 +2072,7 @@ var prjData = [
   {
     "ID":130,
     "PROJECT_NAME":"(Cholera Program) Oxfam",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":433
   },
   {
@@ -2108,7 +2108,7 @@ var prjData = [
   {
     "ID":130,
     "PROJECT_NAME":"(Cholera Program) Oxfam",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":441
   },
   {
@@ -2222,25 +2222,25 @@ var prjData = [
   {
     "ID":54,
     "PROJECT_NAME":"IRC: Latrine De-sludging",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":11
   },
   {
     "ID":58,
     "PROJECT_NAME":"IRC: Improving Water and Sanitation Services",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":11
   },
   {
     "ID":60,
     "PROJECT_NAME":"American Refugee Committee: Water and Sanitation Services",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":11
   },
   {
     "ID":61,
     "PROJECT_NAME":"American Refugee Committee: Improving Water and Sanitation Services",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":11
   },
   {
@@ -2324,13 +2324,13 @@ var prjData = [
   {
     "ID":128,
     "PROJECT_NAME":"(Cholera Program) French Red Cross",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":1
   },
   {
     "ID":128,
     "PROJECT_NAME":"(Cholera Program) French Red Cross",
-    "SctrCluster":"WatSan",
+    "SctrCluster":"Water and Sanitation",
     "CommuneCODE":5
   },
   {

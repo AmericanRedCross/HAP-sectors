@@ -109,6 +109,7 @@ function clickedStory(d){
   $("#info-links").append('<ul>');
   // $("#info-links").empty(); // info-link is for clicked sectors
   $("#info").fadeIn();
+  $("#overflow-box").scrollTop(16);
 }
 
 function clickedSector(button) {
@@ -149,6 +150,7 @@ function clickedSector(button) {
   });
 
   $("#info").fadeIn();
+  $("#overflow-box").scrollTop(16);
 
 
 }

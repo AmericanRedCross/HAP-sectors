@@ -51,7 +51,7 @@ html, body {
 	max-height: 330px;
 	overflow: auto;
 	overflow-y: auto;
-	padding: 20px 7px;
+	padding: 20px 9px 30px 4px;
 }
 ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -81,6 +81,9 @@ html, body {
 }
 #info-blurb {
 	font-weight: 500;
+	font-size: 110%;
+}
+#info-links{
 	font-size: 110%;
 }
 #info-pic {

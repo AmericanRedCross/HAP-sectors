@@ -98,17 +98,18 @@ function colorProjectAreas(){
 
 function clickedStory(d){
   d3.select("#info-title").text(d.title);
-  d3.select("#info-blurb").text(d.story);
+  d3.select("#info-blurb").html(d.story);
   d3.select("#info-link").attr('href', d.link_1);
   var imgPath = "img/pics/" + d.story_name + ".jpg";
   d3.select("#info-pic").attr("src", imgPath);
-  $("#info-links").html('<ul>');
+  var linksHtml = "<ul>"
   for(link in d.links){
-    $("#info-links").append('<li><a href ="' + link + '" target="_blank">' + d.links[link] + '</a></li>');
+    thisLinkHtml = '<li><a href ="' + link + '" target="_blank">' + d.links[link] + '</a></li>';
+    linksHtml += thisLinkHtml;
   }
-  $("#info-links").append('<ul>');
-  // $("#info-links").empty(); // info-link is for clicked sectors
-  $("#info").fadeIn();
+  linksHtml += "</ul>"
+  $("#info-links").html(linksHtml);
+  $("#info").fadeIn()
   $("#overflow-box").scrollTop(16);
 }
 
@@ -141,23 +142,19 @@ function clickedSector(button) {
       d3.select("#info-link").attr('href', info.link_1);
       var imgPath = "img/pics/" + info.story_name + ".jpg";
       d3.select("#info-pic").attr("src", imgPath);
-      $("#info-links").html('<ul>');
+      var linksHtml = "<ul>"
       for(link in info.links){
-        $("#info-links").append('<li><a href ="' + link + '" target="_blank">' + info.links[link] + '</a></li>');
+        thisLinkHtml = '<li><a href ="' + link + '" target="_blank">' + info.links[link] + '</a></li>';
+        linksHtml += thisLinkHtml;
       }
-      $("#info-links").append('<ul>');
+      linksHtml += "</ul>"
+      $("#info-links").html(linksHtml);
     }
   });
 
   $("#info").fadeIn();
   $("#overflow-box").scrollTop(16);
 
-
-}
-
-function resetMap(){
-  communeGroup.selectAll("path").classed("active-geo", false);
-  d3.selectAll(".btn-custom-sector").classed("active", false);
 }
 
 

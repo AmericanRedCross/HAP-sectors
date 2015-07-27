@@ -50,6 +50,7 @@ html, body {
 }
 #info .text {
 	color: #0d0d0d;
+	text-shadow: white 0.1em 0.1em 0.2em;
 }
 #info-title {
 	margin: 0px;

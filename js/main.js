@@ -138,7 +138,7 @@ function clickedSector(button) {
     if(info.sector.replace(/\s+/g, '') === activePrjSector){
       // if yes, populate the info box
       d3.select("#info-title").text(info.sector);
-      d3.select("#info-blurb").text(info.blurb);
+      d3.select("#info-blurb").html(info.blurb);
       d3.select("#info-link").attr('href', info.link_1);
       var imgPath = "img/pics/" + info.story_name + ".jpg";
       d3.select("#info-pic").attr("src", imgPath);

@@ -3,7 +3,7 @@ var stories = [
     "title":"Jordanie",
     "story_name":"soccer",
     "long":-72.311673,
-    "lat":18.6518095,
+    "lat":18.534368,
     "story":"Ten year-old Jordanie Derulus was trapped in the rubble of his house for two days following the earthquake. Once out of the rubble, Jordanie was brought to a hospital where doctors were forced to remove his right leg. While Jordanie never lost faith he would walk again, the leg that he has received from a prosthetics clinic co-funded by the American Red Cross and other global Red Cross network partners has allowed him to get back to normal. \"I can kick a soccer ball again, and walk,\" he explained, \"it's a wonderful thing.\"",
     "links": {
       "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m42240140_Preventing_Disease_and_Improving_Healthcare_Factsheet.pdf": "Improving Healthcare in Haiti",

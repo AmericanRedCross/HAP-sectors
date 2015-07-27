@@ -99,12 +99,12 @@ function colorProjectAreas(){
 function clickedStory(d){
   d3.select("#info-title").text(d.title);
   d3.select("#info-blurb").text(d.story);
-  d3.select("#info-link").attr('href', info.link_1);
+  d3.select("#info-link").attr('href', d.link_1);
   var imgPath = "img/pics/" + d.story_name + ".jpg";
   d3.select("#info-pic").attr("src", imgPath);
   $("#info-links").html('<ul>');
-  for(link in info.links){
-    $("#info-links").append('<li><a href ="' + link + '" target="_blank">' + info.links[link] + '</a></li>');
+  for(link in d.links){
+    $("#info-links").append('<li><a href ="' + link + '" target="_blank">' + d.links[link] + '</a></li>');
   }
   $("#info-links").append('<ul>');
   // $("#info-links").empty(); // info-link is for clicked sectors

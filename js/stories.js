@@ -25,7 +25,7 @@ var stories = [
     "story_name":"mother",
     "long":-72.5228609,
     "lat":19.8451211,
-    "story":"<p>Yverose Dieudonné brought her 4-month-old nephew, Ricardo Dieudonné, to the maternity and pediatrics ward of a clinic in Borgne. The American Red Cross funds and supports the clinic and cholera treatment center, which is run by H.O.P.E., a grassroots organization that is building medical capacity in the Great North. Thanks to Red Cross support, H.O.P.E. has been able to launch mobile hospitals and clinics to reach remote communities. Teams of doctors and nurses embark on week-long treks through the most inaccessible villages of Borgne to provide services to patients who would otherwise not have access to care.</p>",
+    "story":"<p>Yverose Dieudonné brought her 4-month-old nephew, Ricardo, to the maternity & pediatrics ward of a clinic in Borgne. American Red Cross funds and supports the clinic and cholera treatment center, which is run by H.O.P.E., a grassroots organization that is building medical capacity in the Great North. Thanks to Red Cross support, H.O.P.E. has been able to launch mobile hospitals and clinics to reach remote communities.</p>",
     "links": {
       "http://redcrosschat.org/2014/01/14/mobile-clinics-in-haiti-help-pregnant-women-stay-healthy": "Mobile Clinics in Haiti Help Pregnant Women Stay Healthy",
       "http://www.redcross.org/images/MEDIA_CustomProductCatalog/m51740268_Gran_No_Pi_Djanm_Factsheet_English_2015_05.pdf": "Read about our work in the Great North of Haiti"
